@@ -31,12 +31,8 @@ class MyApp extends StatelessWidget {
         floatingActionButton: FloatingActionButton(onPressed: null,),
         body: Center(child:Text('maysa',style: TextStyle(color: Colors.red,backgroundColor: Colors.blue),),),
         
-      */ 
-        
-      );
-
-
-    
+      */        
+      ); 
     
   }
 }
