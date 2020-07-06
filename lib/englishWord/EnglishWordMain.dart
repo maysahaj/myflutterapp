@@ -9,11 +9,8 @@ class EnglishWordMain extends StatelessWidget {
     final WordPair wordPair = new WordPair.random();  // Delete this line.
 
     return new MaterialApp(
-      title: 'Welcome to Flutter',
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Welcome to Flutter'),
-        ),
+      home:Scaffold(
+        
         body: new Center(
           //child: new Text(wordPair.asPascalCase), // Change this line to... 
           child: new RandomWords(),                 // ... this line.

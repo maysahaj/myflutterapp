@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myApp/rouute.dart';
-
-
-import 'Tasks/tasksToDo.dart';
-import 'englishWord/randomWords.dart';
-import 'englishWord/tab.dart';
-import 'imgpp.dart';
-
-
+import 'FormTask/formApp.dart';
+import 'englishWord/EnglishWordMain.dart';
 
 
 void main() {
@@ -15,14 +8,12 @@ void main() {
   runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title:'Maysa App',
-      home:FirstRoute(),
+      home:EnglishWordMain(),
       
       /*Scaffold(
         appBar: AppBar(title:Text('Maysa App')
@@ -33,6 +24,7 @@ class MyApp extends StatelessWidget {
         
       */        
       ); 
-    
+  
   }
 }
+

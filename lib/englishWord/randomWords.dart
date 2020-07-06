@@ -18,7 +18,7 @@ class RandomWordsState extends State<RandomWords> {
     return new Scaffold(
       appBar: new AppBar(
        
-        title: const Text('Startup Name Generator'),
+        title:Text('EnglishWord'),
       ),
       body: _buildSuggestions(),
      
@@ -28,11 +28,10 @@ class RandomWordsState extends State<RandomWords> {
 
   Widget _buildSuggestions() {
     return new ListView.builder(
-    
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(10.0),
         itemBuilder: (BuildContext _context, int i) {
           if (i.isOdd) {
-            return const Divider();
+            return Divider();
           }
           final int index = i ~/ 2;
           if (index >= suggestions.length) {
@@ -41,7 +40,6 @@ class RandomWordsState extends State<RandomWords> {
           return _buildRow(suggestions[index]);
         });
   }
-
   Widget _buildRow(WordPair pair) {
     return new ListTile(
       title: new Text(
